@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "SQL Adapter Updategram", "SQL Adapter Updategram.btproj", "{3C079AC9-606C-4DBD-BCA1-EE347219FADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|.NET = Deployment|.NET
+		Development|.NET = Development|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C079AC9-606C-4DBD-BCA1-EE347219FADC}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{3C079AC9-606C-4DBD-BCA1-EE347219FADC}.Deployment|.NET.Build.0 = Deployment|.NET
+		{3C079AC9-606C-4DBD-BCA1-EE347219FADC}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{3C079AC9-606C-4DBD-BCA1-EE347219FADC}.Development|.NET.ActiveCfg = Development|.NET
+		{3C079AC9-606C-4DBD-BCA1-EE347219FADC}.Development|.NET.Build.0 = Development|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,227 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="83a0760c-3c5e-4540-bff6-1024739de1c1" LowerBound="1.1" HigherBound="50.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="SQL_Adapter_Updategram" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="9c5b6817-af34-44c0-9c20-aca810e9441f" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="InsertCustomerPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b135327f-1921-48c7-9c25-09d2c26445eb" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="InsertCustomer" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e60a9950-4ba7-4918-8381-f3bc8b3c0116" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.34">
+                    <om:Property Name="Ref" Value="SQL_Adapter_Updategram.InsertCustomerRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="f9524abf-4561-42a2-8ef9-8d70d2298591" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.36" HigherBound="16.58">
+                    <om:Property Name="Ref" Value="SQL_Adapter_Updategram.InsertCustomerResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="744ca54d-b56d-4621-92ac-ee816a9eded8" ParentLink="Module_PortType" LowerBound="19.1" HigherBound="26.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="oprtReceiveMessageType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="eab15917-4a9b-4271-ac41-6cfe3e94c756" ParentLink="PortType_OperationDeclaration" LowerBound="21.1" HigherBound="25.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c03d6f81-9988-48f6-8278-576c1a061053" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="23.13" HigherBound="23.51">
+                    <om:Property Name="Ref" Value="SQL_Adapter_Updategram.InsertCustomerService.Customer_Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="98b6c6e0-1880-4c41-a1b7-5754d4f7be0e" ParentLink="Module_PortType" LowerBound="26.1" HigherBound="33.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="oprtSendMessageType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="43b7c498-d15c-4f80-a298-022c1bb87830" ParentLink="PortType_OperationDeclaration" LowerBound="28.1" HigherBound="32.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="97b1dcde-8503-48b1-adf4-01e745e957d3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="30.13" HigherBound="30.51">
+                    <om:Property Name="Ref" Value="SQL_Adapter_Updategram.InsertCustomerService.Customer_Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="562a8766-712b-4220-8ad0-1aaf573e8259" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="InsertCustomerRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="42fd9798-8f95-4d9f-80fb-28231459515a" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="SQL_Adapter_Updategram.InsertCustomerService.Customer_Request" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9573c9c2-f07b-42ed-ae16-de6873e18bc9" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="InsertCustomerResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="75c36d08-b034-4a14-bc6e-349a872dc57c" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="SQL_Adapter_Updategram.InsertCustomerService.Customer_Response" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="a29fa2f9-8bf8-44e5-b1f5-e96c004e47c7" ParentLink="Module_ServiceDeclaration" LowerBound="33.1" HigherBound="49.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Orchestration_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="4950a41f-674b-45b0-849e-7a285b140133" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="9046188f-ddef-469f-bf4a-32e2abbba8e9" ParentLink="ServiceBody_Statement" LowerBound="43.1" HigherBound="45.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="oprtReceiveMessage" />
+                    <om:Property Name="MessageName" Value="msgCustomerUpdate" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_Customer" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="484e1797-8593-4e9f-8ca2-38ec7d6b42eb" ParentLink="ServiceBody_Statement" LowerBound="45.1" HigherBound="47.1">
+                    <om:Property Name="PortName" Value="oprtSendMessage" />
+                    <om:Property Name="MessageName" Value="msgCustomerUpdate" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_Customer" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c4482c09-7ebe-4252-857f-49b4f2ccfc25" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="36.1" HigherBound="38.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="SQL_Adapter_Updategram.oprtReceiveMessageType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="oprtReceiveMessage" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="e196d835-8763-4037-a170-3c69af25df53" ParentLink="PortDeclaration_CLRAttribute" LowerBound="36.1" HigherBound="37.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9e7c42ef-68dc-4cac-a672-b5d79ab929a8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="38.1" HigherBound="40.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="SQL_Adapter_Updategram.oprtSendMessageType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="oprtSendMessage" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="cd2136b5-a72f-4796-84b3-65e43cbcbafd" ParentLink="PortDeclaration_CLRAttribute" LowerBound="38.1" HigherBound="39.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="26bb7842-2473-45ce-8bc1-6c0e040473b0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="40.1" HigherBound="41.1">
+                <om:Property Name="Type" Value="SQL_Adapter_Updategram.InsertCustomerService.Customer_Request" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgCustomerUpdate" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module SQL_Adapter_Updategram
+{
+    internal messagetype InsertCustomerRequest
+    {
+        body InsertCustomerService.Customer_Request parameters;
+    };
+    internal messagetype InsertCustomerResponse
+    {
+        body InsertCustomerService.Customer_Response parameters;
+    };
+    internal porttype InsertCustomerPortType
+    {
+        requestresponse InsertCustomer
+        {
+            InsertCustomerRequest, InsertCustomerResponse
+        };
+    };
+    internal porttype oprtReceiveMessageType
+    {
+        oneway Operation_1
+        {
+            InsertCustomerService.Customer_Request
+        };
+    };
+    internal porttype oprtSendMessageType
+    {
+        oneway Operation_1
+        {
+            InsertCustomerService.Customer_Request
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Orchestration_1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements oprtReceiveMessageType oprtReceiveMessage;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses oprtSendMessageType oprtSendMessage;
+        message InsertCustomerService.Customer_Request msgCustomerUpdate;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9046188f-ddef-469f-bf4a-32e2abbba8e9")]
+            activate receive (oprtReceiveMessage.Operation_1, msgCustomerUpdate);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("484e1797-8593-4e9f-8ca2-38ec7d6b42eb")]
+            send (oprtSendMessage.Operation_1, msgCustomerUpdate);
+        }
+    }
+}
+

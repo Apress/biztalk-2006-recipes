@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "CommonSchemas", "CommonSchemas\CommonSchemas.btproj", "{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}"
+EndProject
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "ExceptionHandlerBuffer", "ExceptionHandlerBuffer\ExceptionHandlerBuffer.btproj", "{16673362-2EAD-4AA2-A2C4-BBF306374EFD}"
+EndProject
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "SAMPLEMainBusinessFlow", "SAMPLEMainBusinessFlow\SAMPLEMainBusinessFlow.btproj", "{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}"
+EndProject
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "SAMPLEExternalComponentCall_Generic", "SAMPLEExternalComponentCall_Generic\SAMPLEExternalComponentCall_Generic.btproj", "{47699D97-4BF2-4A53-9D3C-89B190C96BCE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92} = {3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD} = {16673362-2EAD-4AA2-A2C4-BBF306374EFD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|.NET = Deployment|.NET
+		Development|.NET = Development|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}.Deployment|.NET.Build.0 = Deployment|.NET
+		{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}.Development|.NET.ActiveCfg = Development|.NET
+		{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}.Development|.NET.Build.0 = Development|.NET
+		{F3F24C12-B5A5-4F74-B16A-7E4252A4F0F4}.Development|.NET.Deploy.0 = Development|.NET
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD}.Deployment|.NET.Build.0 = Deployment|.NET
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD}.Development|.NET.ActiveCfg = Development|.NET
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD}.Development|.NET.Build.0 = Development|.NET
+		{16673362-2EAD-4AA2-A2C4-BBF306374EFD}.Development|.NET.Deploy.0 = Development|.NET
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}.Deployment|.NET.Build.0 = Deployment|.NET
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}.Development|.NET.ActiveCfg = Development|.NET
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}.Development|.NET.Build.0 = Development|.NET
+		{3C0A115D-D962-4A9C-A2AE-CEA1A7900B92}.Development|.NET.Deploy.0 = Development|.NET
+		{47699D97-4BF2-4A53-9D3C-89B190C96BCE}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{47699D97-4BF2-4A53-9D3C-89B190C96BCE}.Deployment|.NET.Build.0 = Deployment|.NET
+		{47699D97-4BF2-4A53-9D3C-89B190C96BCE}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{47699D97-4BF2-4A53-9D3C-89B190C96BCE}.Development|.NET.ActiveCfg = Development|.NET
+		{47699D97-4BF2-4A53-9D3C-89B190C96BCE}.Development|.NET.Build.0 = Development|.NET
+		{47699D97-4BF2-4A53-9D3C-89B190C96BCE}.Development|.NET.Deploy.0 = Development|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,98 @@
+﻿<VisualStudioProject>
+    <BIZTALK
+        ProductVersion = "3.5.1602"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{F45D30C3-92C8-457B-8B5D-B061F3C33841}"
+    >
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon
+                    AssemblyKeyName = ""
+                    AssemblyKeyFile = "..\..\..\key.snk"
+                    AssemblyDelaySign = "False"
+                    AssemblyTitle = ""
+                    AssemblyDescription = ""
+                    AssemblyDefaultAlias = ""
+                    AssemblyConfiguration = ""
+                    AssemblyTrademark = ""
+                    AssemblyProduct = ""
+                    AssemblyInformationalVersion = "1.0.0.0"
+                    AssemblyFileVersion = "1.0.0.0"
+                    AssemblyCopyright = ""
+                    AssemblyCompany = ""
+                    AssemblyVersion = "1.0.0.0"
+                    DefaultNamespace = "Sample_Pipeline_Component_Recipe"
+                    AssemblyName = "Sample Pipeline Component Recipe"
+                />
+                <Config
+                    Name = "Development"
+                    ApplicationName = ""
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "True"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Development\"
+                />
+                <Config
+                    Name = "Deployment"
+                    ApplicationName = ""
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "False"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Deployment\"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.DefaultPipelines"
+                    AssemblyName = "Microsoft.BizTalk.DefaultPipelines"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.GlobalPropertySchemas"
+                    AssemblyName = "Microsoft.BizTalk.GlobalPropertySchemas"
+                />
+                <Reference
+                    Name = "SampleCustomPipelineComponent"
+                    AssemblyName = "SampleCustomPipelineComponent"
+                    HintPath = "..\..\..\..\..\..\Program Files\Microsoft BizTalk Server 2006\Pipeline Components\SampleCustomPipelineComponent.dll"
+                    Private = "False"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "CustomerRecord.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "Sample_Pipeline_Component_Recipe"
+                    Type = "CustomerRecord"
+                />
+                <File
+                    RelPath = "ReceiveCustomContext.btp"
+                    BuildAction = "Compile"
+                    Namespace = "Sample_Pipeline_Component_Recipe"
+                    Type = "ReceiveCustomContext"
+                />
+                <File
+                    RelPath = "SamplePipelinePropertySchema.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "Sample_Pipeline_Component_Recipe"
+                    Type = "SamplePipelinePropertySchema"
+                />
+            </Include>
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

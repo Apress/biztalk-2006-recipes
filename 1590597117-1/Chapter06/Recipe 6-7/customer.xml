@@ -1,0 +1,7 @@
+<ns0:Customer xmlns:ns0="http://SQLAdapterStoredProcedure.schCustomer">
+        <CustomerName>Sherrie Long</CustomerName>
+	  <Address>5015 48th Ave SW</Address>
+	  <City>Woodland Park</City> 
+	  <Region>WA</Region>
+	  <PostalCode>98005</PostalCode>
+  </ns0:Customer>

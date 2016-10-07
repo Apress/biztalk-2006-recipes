@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "SQL Receive Adapter Recipe", "SQL Receive Adapter Recipe.btproj", "{7EE2D519-4032-4D58-A14A-B82350E082A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|.NET = Deployment|.NET
+		Development|.NET = Development|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EE2D519-4032-4D58-A14A-B82350E082A7}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{7EE2D519-4032-4D58-A14A-B82350E082A7}.Deployment|.NET.Build.0 = Deployment|.NET
+		{7EE2D519-4032-4D58-A14A-B82350E082A7}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{7EE2D519-4032-4D58-A14A-B82350E082A7}.Development|.NET.ActiveCfg = Development|.NET
+		{7EE2D519-4032-4D58-A14A-B82350E082A7}.Development|.NET.Build.0 = Development|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

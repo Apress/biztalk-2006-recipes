@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "Sample Pipeline Component Recipe", "Sample Pipeline Component Recipe.btproj", "{F45D30C3-92C8-457B-8B5D-B061F3C33841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|.NET = Deployment|.NET
+		Development|.NET = Development|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F45D30C3-92C8-457B-8B5D-B061F3C33841}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{F45D30C3-92C8-457B-8B5D-B061F3C33841}.Deployment|.NET.Build.0 = Deployment|.NET
+		{F45D30C3-92C8-457B-8B5D-B061F3C33841}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{F45D30C3-92C8-457B-8B5D-B061F3C33841}.Development|.NET.ActiveCfg = Development|.NET
+		{F45D30C3-92C8-457B-8B5D-B061F3C33841}.Development|.NET.Build.0 = Development|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

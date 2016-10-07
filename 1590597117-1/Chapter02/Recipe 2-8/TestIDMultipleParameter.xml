@@ -1,0 +1,4 @@
+<ns0:PersonSearch xmlns:ns0="http://BizTalk_Server_DataBase_Lookup.MultipleID">
+  <lname>Ringer</lname> 
+  <fname>Albert</fname> 
+  </ns0:PersonSearch>

@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "Sample Role Link Recipe", "Sample Role Link Recipe.btproj", "{1130D0F6-D971-4A25-B52E-496734EA3925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|.NET = Deployment|.NET
+		Development|.NET = Development|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1130D0F6-D971-4A25-B52E-496734EA3925}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{1130D0F6-D971-4A25-B52E-496734EA3925}.Deployment|.NET.Build.0 = Deployment|.NET
+		{1130D0F6-D971-4A25-B52E-496734EA3925}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{1130D0F6-D971-4A25-B52E-496734EA3925}.Development|.NET.ActiveCfg = Development|.NET
+		{1130D0F6-D971-4A25-B52E-496734EA3925}.Development|.NET.Build.0 = Development|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,198 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="f75c9f56-4faf-4c00-b2fa-402b3b6653bb" LowerBound="1.1" HigherBound="45.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="SampleListenShape" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="b39d7f9f-0f1b-4060-82cb-c8b28e8c4e4e" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="15.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_ReceiveIncoming" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="1b834044-069f-4c40-beee-b774d86d054c" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_V1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="904f6642-3534-492e-bafc-449e5ee200e3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.21">
+                    <om:Property Name="Ref" Value="SampleListenShape.PersonV1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="45d2fe0a-cde7-49a0-a004-4a9c7610dbc0" ParentLink="PortType_OperationDeclaration" LowerBound="10.1" HigherBound="14.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_V2" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="1680ed32-14f8-4a97-bc6a-7a1dade84eed" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="12.13" HigherBound="12.21">
+                    <om:Property Name="Ref" Value="SampleListenShape.PersonV2" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="9ba9d9bb-0f21-45e9-80b6-496ef6ebfbc6" ParentLink="Module_ServiceDeclaration" LowerBound="15.1" HigherBound="44.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SimpleFlow" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="MessageDeclaration" OID="a7b9cc8c-9e8c-46d1-a3a8-3d733acbe113" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="20.1" HigherBound="21.1">
+                <om:Property Name="Type" Value="SampleListenShape.PersonV1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgVer1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b4fc22d2-5e5a-492d-91a5-e198be242b9f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="21.1" HigherBound="22.1">
+                <om:Property Name="Type" Value="SampleListenShape.PersonV2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgVer2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="254bc597-6d30-4d23-a567-3fde2b5cfaec" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Listen" OID="1fb23886-7187-4f43-94ac-76c94176d9db" ParentLink="ServiceBody_Statement" LowerBound="24.1" HigherBound="42.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Listen_for_incoming_document" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="ListenBranch" OID="a32f159e-dd65-4a8b-9eb6-2891b92e8fe2" ParentLink="ReallyComplexStatement_Branch" LowerBound="24.1" HigherBound="24.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ListenBranch_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Task" OID="ee7e7fff-a5d7-4bc0-a502-4c82f3547d08" ParentLink="ComplexStatement_Statement" LowerBound="30.1" HigherBound="36.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Map to a common message type" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="8bc78343-d0d0-4324-8449-8eba6b5b260e" ParentLink="ComplexStatement_Statement" LowerBound="30.1" HigherBound="36.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_Version2" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="08949422-40b7-4361-9293-a28653156234" ParentLink="ComplexStatement_Statement" LowerBound="33.1" HigherBound="35.1">
+                                    <om:Property Name="ClassName" Value="SampleListenShape.Map_to_Ver_2" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Map_to_Ver_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="9ca849ae-19ee-4a6d-b167-ea16775f35eb" ParentLink="Transform_InputMessagePartRef" LowerBound="34.79" HigherBound="34.86">
+                                        <om:Property Name="MessageRef" Value="msgVer1" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="7548f307-3a7f-4c8b-a306-aa0637a7f2aa" ParentLink="Transform_OutputMessagePartRef" LowerBound="34.36" HigherBound="34.43">
+                                        <om:Property Name="MessageRef" Value="msgVer2" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="4241ab9c-e064-4412-8a12-6c9f26bed4c3" ParentLink="Construct_MessageRef" LowerBound="31.31" HigherBound="31.38">
+                                    <om:Property Name="Ref" Value="msgVer2" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Receive" OID="6535000d-7dec-4705-b2b3-15f5f73b9335" ParentLink="ListenBranch_Statement" LowerBound="27.1" HigherBound="28.76">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_Receive_Incoming" />
+                            <om:Property Name="MessageName" Value="msgVer1" />
+                            <om:Property Name="OperationName" Value="Operation_V1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_Ver_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ListenBranch" OID="cccb2ad7-27e5-4087-bfe4-fa818e80e6aa" ParentLink="ReallyComplexStatement_Branch" LowerBound="24.1" HigherBound="24.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ListenBranch_2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Receive" OID="7c09ce81-45c6-4940-8005-a65fec75e4a5" ParentLink="ListenBranch_Statement" LowerBound="37.1" HigherBound="38.76">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_Receive_Incoming" />
+                            <om:Property Name="MessageName" Value="msgVer2" />
+                            <om:Property Name="OperationName" Value="Operation_V2" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_Ver_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c66d439b-b434-47b6-bf82-03142f2436e7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="18.1" HigherBound="20.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="11" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="SampleListenShape.PortType_ReceiveIncoming" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Receive_Incoming" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="34804b13-12e7-4207-8073-c3cac8c78887" ParentLink="PortDeclaration_CLRAttribute" LowerBound="18.1" HigherBound="19.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module SampleListenShape
+{
+    internal porttype PortType_ReceiveIncoming
+    {
+        oneway Operation_V1
+        {
+            PersonV1
+        };
+        oneway Operation_V2
+        {
+            PersonV2
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service SimpleFlow
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_ReceiveIncoming Port_Receive_Incoming;
+        message PersonV1 msgVer1;
+        message PersonV2 msgVer2;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1fb23886-7187-4f43-94ac-76c94176d9db")]
+            listen
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6535000d-7dec-4705-b2b3-15f5f73b9335")]
+                until receive (Port_Receive_Incoming.Operation_V1, msgVer1)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8bc78343-d0d0-4324-8449-8eba6b5b260e")]
+                    construct msgVer2
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("08949422-40b7-4361-9293-a28653156234")]
+                        transform (msgVer2) = SampleListenShape.Map_to_Ver_2 (msgVer1);
+                    }
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7c09ce81-45c6-4940-8005-a65fec75e4a5")]
+                until receive (Port_Receive_Incoming.Operation_V2, msgVer2)
+                {
+                }
+            }
+        }
+    }
+}
+

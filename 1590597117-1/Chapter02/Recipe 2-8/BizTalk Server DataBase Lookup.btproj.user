@@ -1,0 +1,111 @@
+﻿<VisualStudioProject>
+    <BIZTALK>
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon ReferencesPath = "" />
+                <Config
+                    Name = "Development"
+                    RestartHostInstances = "False"
+                    Register = "True"
+                    Redeploy = "False"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "(LOCAL)"
+                />
+                <Config
+                    Name = "Deployment"
+                    RestartHostInstances = "False"
+                    Register = "True"
+                    Redeploy = "False"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "BIZTALK2004BOOK"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+        <Files>
+            <File
+                RelPath = "ID.xsd"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "0"
+                EditorOutputInstanceFilename = ""
+                TestMapInputInstanceFilename = ""
+                EditorInputInstanceFilename = "C:\Documents and Settings\Administrator\Desktop\FlatFileRecipe\BizTalk Server DataBase Lookup\TestID.xml"
+            />
+            <File
+                RelPath = "MultipleID.xsd"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "0"
+                EditorOutputInstanceFilename = ""
+                TestMapInputInstanceFilename = ""
+                EditorInputInstanceFilename = "C:\Documents and Settings\Administrator\Desktop\BizTalk Server DataBase Lookup\TestIDMultipleParameter.xml"
+            />
+            <File
+                RelPath = "PersonResult.xsd"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "0"
+                EditorOutputInstanceFilename = ""
+                TestMapInputInstanceFilename = ""
+                EditorInputInstanceFilename = ""
+            />
+            <File
+                RelPath = "RetrievePersonMultipleParameter.btm"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "1"
+                EditorOutputInstanceFilename = ""
+                TestMapInputInstanceFilename = "C:\Documents and Settings\Administrator\Desktop\BizTalk Server DataBase Lookup\TestIDMultipleParameter.xml"
+                EditorInputInstanceFilename = ""
+            />
+            <File
+                RelPath = "RetrievePersonSingleParameter.btm"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "1"
+                EditorOutputInstanceFilename = ""
+                TestMapInputInstanceFilename = "C:\Documents and Settings\Administrator\Desktop\BizTalk Server DataBase Lookup\TestIDSingleParameter.xml"
+                EditorInputInstanceFilename = ""
+            />
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

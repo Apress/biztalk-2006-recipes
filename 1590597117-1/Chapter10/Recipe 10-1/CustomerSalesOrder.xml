@@ -1,0 +1,35 @@
+<ns0:order xmlns:ns0="http://Schema_Chapter_Project.CustomerSalesOrder">
+  <date>10/24/2004</date>
+  <customerHeader>
+    <customerType>SoldTo</customerType>
+    <fullName>Shauna Marie</fullName>
+    <street>1223 Buttercup Lane</street>
+    <city>Seattle</city>
+    <state>WA</state>
+    <postal>98155</postal>
+  </customerHeader>
+  <customerHeader>
+    <customerType>ShipTo</customerType>
+    <fullName>Jen Schwinn</fullName>
+    <street>3030 Moby Road</street>
+    <city>Kent</city>
+    <state>WA</state>
+    <postal>98110</postal>
+  </customerHeader>
+  <items>
+    <item>
+      <productId>ITEM111-AA</productId>
+      <productName>Merlot</productName>
+      <quantity>1</quantity>
+      <unityPrice>2.00</unityPrice>
+      <description>Bottle of Wine</description>
+    </item>
+    <item>
+      <productId>ITEM111-AB</productId>
+      <productName>Cabernet</productName>
+      <quantity>1</quantity>
+      <unityPrice>2.00</unityPrice>
+      <description>Bottle of Wine</description>
+    </item>
+  </items>
+</ns0:order>
